@@ -56,7 +56,7 @@ public class Player : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag == "Enemy") // si colisionamos con un enemigo 
+        if(collision.gameObject.tag == "Enemy" || collision.gameObject.tag == "Enemy2") // si colisionamos con un enemigo 
         {
             SCORE = 0;  
             SceneManager.LoadScene(SceneManager.GetActiveScene().name); // reiniciamos el juego
